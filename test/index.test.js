@@ -1,4 +1,4 @@
-import Color from '../lib/index.es6';
+import Color from '../lib/index';
 
 
 /**
