@@ -1,6 +1,6 @@
 {
   "name": "@creenv/color",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The color class used by the creenv environment. Developed in es6.",
   "keywords": [
     "color",
