@@ -17,9 +17,9 @@ let expected1 = {
 test( "color instantiation using different inputs", () => {
   expect( new Color().toObject() ).toEqual( { r: 0, g: 0, b: 0, a: 1 } );
   expect( new Color(245,51,111).toObject() ).toEqual( expected1 );
-  expect( new Color("#f5336f").toObject() ).toEqual( expected1 );
   expect( Color.fromString("#f5336f").toObject() ).toEqual( expected1 );
-  expect( new Color([245,51,111]).toObject() ).toEqual( expected1 );
+  expect( Color.fromString("rgba(245,51,111,1.0)").toObject() ).toEqual( expected1 );
+  expect( Color.fromArray([245,51,111]).toObject() ).toEqual( expected1 );
   expect( Color.fromHSL(341,0.91,0.58).rounded().toObject() ).toEqual( { r: 245, g: 50, b: 112, a: 1} );
   expect( Color.fromHSV(320,0.50,0.40).rounded().toObject() ).toEqual( { r: 102, g: 51, b: 85, a: 1 } );
 });
