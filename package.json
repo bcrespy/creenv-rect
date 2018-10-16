@@ -30,6 +30,7 @@
   },
   "peerDependencies": {},
   "dependencies": {
+    "@creenv/vector": "^1.0.2",
     "color-string": "^1.5.3"
   },
   "devDependencies": {
@@ -56,6 +57,7 @@
     "webpack-dev-server": "^3.1.9"
   },
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "transformIgnorePatterns": []
   }
 }
