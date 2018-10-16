@@ -1,23 +1,24 @@
 {
-  "name": "@creenv/color",
-  "version": "1.0.2",
-  "description": "The color class used by the creenv environment. Developed in es6.",
+  "name": "@creenv/colorpicker",
+  "version": "0.0.1",
+  "description": "A lightweight css color picker, easily customizable.",
   "keywords": [
     "color",
-    "colors",
-    "color operations",
+    "colorpicker",
+    "creative",
+    "environment",
     "creenv"
   ],
   "license": "MIT",
   "author": "Baptiste Crespy",
-  "homepage": "https://github.com/bcrespy/creenv-color.git",
+  "homepage": "https://github.com/bcrespy/creenv-colorpicker.git",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bcrespy/creenv-color.git"
+    "url": "https://github.com/bcrespy/creenv-colorpicker.git"
   },
   "bugs": {
     "mail": "baptiste.crespy@gmail.com",
-    "url": "https://github.com/bcrespy/creenv-color/issues"
+    "url": "https://github.com/bcrespy/creenv-colorpicker/issues"
   },
   "main": "lib/index.js",
   "scripts": {
@@ -30,8 +31,7 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "@creenv/vector": "^1.0.2",
-    "color-string": "^1.5.3"
+    "@creenv/color": "^1.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
