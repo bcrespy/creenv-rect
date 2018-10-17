@@ -8,10 +8,70 @@
 </head>
 <body>
   
-  <div class="gradient-container">
-    <div class="gradient"></div>
+  <div class="page-content">
+
+    <div class="creenv-colorpicker-container">
+      <div class="creenv-colorpicker-display-box"></div>
+
+      <div class="creenv-colorpicker-picking-box">
+        <div class="creenv-colorpicker-selectors">
+          <div class="creenv-colorpicker-gradient-container">
+            <div class="creenv-colorpicker-gradient"></div>
+            <div class="creenv-colorpicker-picker"></div>
+            <div class="creenv-colorpicker-mouse-picker"></div>
+          </div>
+          <div class="creenv-colorpicker-alpha-container">
+            <!-- here slider transparency -->
+          </div>
+          <div class="creenv-colorpicker-hue-container">
+            <!-- here slider hue-->
+          </div>
+          <div class="creenv-colorpicker-colorinfos-container">
+            <div class="creenv-colorpicker-component-infos">
+              <label class="creenv-colorpicker-component-name" for="creenv-colorpicker-component-red">R</label>
+              <input type="text" maxlength="3" id="creenv-colorpicker-component-red"/>
+            </div>
+            <div class="creenv-colorpicker-component-infos">
+              <label class="creenv-colorpicker-component-name" for="creenv-colorpicker-component-green">G</label>
+              <input type="text" maxlength="3" id="creenv-colorpicker-component-green"/>
+            </div>
+            <div class="creenv-colorpicker-component-infos">
+              <label class="creenv-colorpicker-component-name" for="creenv-colorpicker-component-blue">B</label>
+              <input type="text" maxlength="3" id="creenv-colorpicker-component-blue"/>
+            </div>
+            <div class="creenv-colorpicker-component-infos">
+              <label class="creenv-colorpicker-component-name" for="creenv-colorpicker-component-alpha">A</label>
+              <input type="text" maxlength="3" id="creenv-colorpicker-component-alpha"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="creenv-colorpicker-suggestions">
+          <div class="creenv-colorpicker-expand">Suggested colors</div>
+          <div class="creenv-colorpicker-suggested-colors">
+            <div class="creenv-colorpicker-suggested-color" style="background-color: yellow"></div>
+            <div class="creenv-colorpicker-suggested-color" style="background-color: red"></div>
+            <div class="creenv-colorpicker-suggested-color" style="background-color: green"></div>
+            <div class="creenv-colorpicker-suggested-color" style="background-color: blue"></div>
+            <div class="creenv-colorpicker-suggested-color" style="background-color: lightcoral"></div>
+            <div class="creenv-colorpicker-suggested-color" style="background-color: cyan"></div>
+            <div class="creenv-colorpicker-suggested-color" style="background-color: magenta"></div>
+            <div class="creenv-colorpicker-suggested-color" style="background-color: darkkhaki"></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="gradient-bar"></div>
+  <script>
+    let mousePicker = document.getElementsByClassName("creenv-colorpicker-mouse-picker")[0];
+    let container = document.getElementsByClassName("creenv-colorpicker-gradient-container")[0];
+    
+    container.addEventListener("mousemove", (event) => {
+      console.log(event)
+      mousePicker.style.top = event.pageY-container.getBoundingClientRect().top+"px";
+      mousePicker.style.left = event.pageX-container.getBoundingClientRect().left+"px";
+    })
+  </script>
 </body>
 </html>
