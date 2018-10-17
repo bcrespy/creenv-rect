@@ -94,17 +94,23 @@ $clasname-prefix: "creenv-colorpicker";
         background-image: url('transparent-bg.png');
         border-radius: 0;
 
-        &::before {
+        /*&::before {
           content: '';
           position: absolute;
           top: 0; left: 0;
           bottom: 0; right: 0;
           background: linear-gradient(to bottom, transparent 0%, blue 100%);
-        }
+        }*/
       }
 
       .creenv-slider-progress {
         background: none;
+      }
+
+      .creenv-colorpicker-alpha-bg {
+        position: absolute; 
+        top: 0; left: 0; 
+        bottom: 0; right: 0;
       }
 
       .creenv-slider-cursor {
@@ -152,6 +158,13 @@ $clasname-prefix: "creenv-colorpicker";
         outline: none;
         font-weight: bold;
         font-family: Helvetica, "Open Sans", Source Sans, Arial, sans-serif;
+
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+          display: none; 
+          -webkit-appearance: none;
+          margin: 0;
+        }
 
         &:hover, &:focus {
           border-color: #121416;
