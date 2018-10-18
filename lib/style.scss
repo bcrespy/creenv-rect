@@ -1,15 +1,31 @@
 $clasname-prefix: "creenv-colorpicker";
 
 
+.creenv-colorpicker-display-box {
+  width: 50px; 
+  height: 25px;
+  background: red;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 2px solid #181a1d;
+}
+
 .creenv-colorpicker-picking-box {
   background: #4d5259;
   padding-top: 15px;
   color: #fff;
   position: absolute;
   font-family: Helvetica, "Open Sans", Source Sans, Arial, sans-serif;
+  overflow: hidden;
+  transition: all 0.5s;
+
+  &.hidden {
+    visibility: hidden;
+  }
 
   .creenv-colorpicker-selectors {
     display: flex;
+    margin-bottom: 15px;
 
     .creenv-colorpicker-gradient-container {
       width: 200px;
@@ -132,6 +148,7 @@ $clasname-prefix: "creenv-colorpicker";
     margin-right: 15px;
     align-content: center;
     justify-content: center;
+    margin-left: 10px;
 
     .creenv-colorpicker-component-infos {
       display: flex;
@@ -148,6 +165,7 @@ $clasname-prefix: "creenv-colorpicker";
         font-weight: bold;
         font-size: 14px;
         color: #181a1d;
+        text-transform: uppercase;
       }
 
       input {
@@ -176,8 +194,8 @@ $clasname-prefix: "creenv-colorpicker";
   }
 
   .creenv-colorpicker-suggestions {
-    margin-top: 15px;
     background: #33373e;
+    overflow: hidden;
 
     .creenv-colorpicker-expand {
       cursor: pointer;
@@ -188,6 +206,11 @@ $clasname-prefix: "creenv-colorpicker";
       font-size: 13px;
       color: #b5bfcd;
       padding: 7px 0;
+      transition: all 0.4s;
+
+      &:hover {
+        background-color: rgb(67,72,80);
+      }
     }
 
     &:hover {
@@ -199,13 +222,14 @@ $clasname-prefix: "creenv-colorpicker";
     }
 
     .creenv-colorpicker-suggested-colors {
-      padding: 0 7px 7px 7px;
+      padding: 0 7px;
       display: flex;
       flex-grow: 0;
       justify-content: center;
       flex-wrap: wrap;
       max-width: 250px;
       margin: auto;
+      transition: height 0.5s;
 
       .creenv-colorpicker-suggested-color {
         margin: 7px;
@@ -215,6 +239,10 @@ $clasname-prefix: "creenv-colorpicker";
         border-radius: 4px;
         transform: translateY(0);
         transition: all 0.5s;
+
+        &:last-child {
+          margin-bottom: 7px;
+        }
 
         &:hover {
           transform: translateY(-2px);
