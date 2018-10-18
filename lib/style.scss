@@ -26,6 +26,7 @@ $clasname-prefix: "creenv-colorpicker";
         top: 0; left: 0;
         bottom: 0; right: 0;
         background-image: url('saturation-value-gradient.png');
+        background-size: cover;
       }
     
       .creenv-colorpicker-picker, .creenv-colorpicker-mouse-picker {
