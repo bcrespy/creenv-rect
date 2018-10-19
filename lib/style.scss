@@ -7,10 +7,11 @@ $clasname-prefix: "creenv-colorpicker";
 .creenv-colorpicker-display-box {
   width: 50px; 
   height: 25px;
-  background: red;
+  background: rgba(0,0,0,0);
   cursor: pointer;
   border-radius: 4px;
   border: 2px solid #181a1d;
+  transition: background-color 0.2s;
 }
 
 .creenv-colorpicker-picking-box {
@@ -128,6 +129,7 @@ $clasname-prefix: "creenv-colorpicker";
 
       .creenv-slider-container {
         background-image: url('transparent-bg.png');
+        background-position: center;
         border-radius: 0;
 
         /*&::before {
