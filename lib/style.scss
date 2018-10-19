@@ -1,5 +1,9 @@
 $clasname-prefix: "creenv-colorpicker";
 
+.creenv-colorpicker-container {
+  position: relative;
+}
+
 .creenv-colorpicker-display-box {
   width: 50px; 
   height: 25px;
