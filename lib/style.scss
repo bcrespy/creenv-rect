@@ -1,5 +1,10 @@
 $clasname-prefix: "creenv-colorpicker";
 
+.creenv-colorpicker-container {
+  position: fixed;
+  right: 150px;
+  top: 130px;
+}
 
 .creenv-colorpicker-display-box {
   width: 50px; 
@@ -18,6 +23,22 @@ $clasname-prefix: "creenv-colorpicker";
   font-family: Helvetica, "Open Sans", Source Sans, Arial, sans-serif;
   overflow: hidden;
   transition: all 0.5s;
+
+  &.bottom {
+    bottom: 29px;
+  }
+
+  &.top {
+    top: 29px;
+  }
+
+  &.left {
+    left: 0;
+  }
+
+  &.right {
+    right: 0;
+  }
 
   &.hidden {
     visibility: hidden;
