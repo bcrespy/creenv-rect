@@ -1,6 +1,6 @@
 {
   "name": "@creenv/colorpicker",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A lightweight css color picker, easily customizable.",
   "keywords": [
     "color",
