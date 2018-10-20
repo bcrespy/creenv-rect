@@ -1,3 +1,5 @@
-This lib is is developed in es6.
+# known bugs
 
-Lazyness
+* when picking a color , if click is released out of the picking box, box gets clossed
+* colorpicker: alphapicker, center the background on the x-axis
+* 

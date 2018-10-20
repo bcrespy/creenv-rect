@@ -1,6 +1,6 @@
 {
   "name": "@creenv/colorpicker",
-  "version": "0.0.1",
+  "version": "0.3.2",
   "description": "A lightweight css color picker, easily customizable.",
   "keywords": [
     "color",
@@ -21,6 +21,9 @@
     "url": "https://github.com/bcrespy/creenv-colorpicker/issues"
   },
   "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "clean": "",
     "test": "cross-env NODE_ENV=test jest",
