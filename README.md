@@ -46,7 +46,7 @@ Javascript does not allow class members to be private, by definition they all ar
 | Name | Type | Accessibility | Def |
 |---|---|---|---|
 *.topleft* | **Vector** | private | pointA from the constructor first argument
-*.bottomright | **Vector** | private | pointB from the constructor second argument
+*.bottomright* | **Vector** | private | pointB from the constructor second argument
 *.size* | **Array.<number>** | private | a n-dimensions array, where n is the number of dimensions of pointA dimensions
 
 ___ 
@@ -56,7 +56,7 @@ ___
 Returns true if *point* is contained within the rectangle and false if it's not. It is required for such a test that *point* dimensions matches the number of dimensions of the rectangle.
 
 | Name | Type | Def |
-|---|---|---|---|
+|---|---|---|
 *point* | **Vector** | point with the same number of dimensions as *pointA* and *pointB*, that needs to be tested
 
 *See example from part 1 for more informations on this function's usage.*
